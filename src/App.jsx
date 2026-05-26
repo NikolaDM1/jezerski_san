@@ -5,10 +5,12 @@ import Apartment from './pages/Apartment'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
 import Reservation from './pages/Reservation'
+import Navbar from './layouts/Navbar'
 
 function App () {
   return (
     <BrowserRouter>
+    <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/apartments" element={<Apartment />} />
@@ -18,6 +20,9 @@ function App () {
       </Routes>
     </BrowserRouter>
   )
-  
+    
+   
+    
+   
 }
 export default App
